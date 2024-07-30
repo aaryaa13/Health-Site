@@ -1,0 +1,172 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+    z-index: 2;
+}
+
+nav {
+    width: 100%;
+    background: #7a1039;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    color: rgb(251, 159, 191);
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav .menu {
+    display: flex;
+}
+
+nav .menu a {
+    color: rgb(252, 170, 196);
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.menu-toggle {
+    display: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+header {
+    height: 100vh;
+    background: url('path/to/your/hero-image.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7a1039;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+}
+
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service {
+    background:#da6391;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 8px #7a1039;
+    text-align: left;
+}
+
+.service h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #901f45;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #da6391;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110vw;
+    z-index: -1;
+
+}
+
+@media (max-width: 768px) {
+    nav .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav .menu a {
+        margin: 10px 0;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    nav .menu.active {
+        display: flex;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+
+    .service {
+        width: 80%;
+    }
+
+    .hero-text h1 {
+        font-size: 2em;
+    }
+}

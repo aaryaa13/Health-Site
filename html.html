@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">HealthSite</div>
+            <div class="menu" id="menu">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <header id="home">
+        <div class="hero-text">
+            <h1>Welcome to HealthSite</h1>
+            <p>Your Health, Our Priority</p>
+        </div>
+    </header>
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>General Consultation</h3>
+                    <p>Comprehensive health check-ups and consultations with experienced doctors.
+                     Plan 
+                    </p>
+                </div>
+                <div class="service">
+                    <h3>Nutrition Advice</h3>
+                    <p>Personalized diet plans and nutritional guidance to keep you healthy.</p>
+                </div>
+                <div class="service">
+                    <h3>Fitness Training</h3>
+                    <p>Custom fitness programs and training sessions for all fitness levels.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    
+    
+    <video autoplay muted loop id="background-video">
+        <source src="./doctor.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <script src="script.js"></script>
+</body>
+</html>
